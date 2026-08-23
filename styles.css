@@ -116,6 +116,11 @@ a{color:var(--accent)}
   background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
   padding:28px 30px;box-shadow:var(--shadow);
 }
+.project-card + .project-card{margin-top:24px}
+.project-diagram{
+  display:block;width:100%;max-width:640px;margin:16px auto;
+  border:1px solid var(--border);border-radius:10px;
+}
 .project-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px}
 .project-header h4{margin:0;font-size:1.2rem}
 .project-status{
@@ -149,9 +154,8 @@ a{color:var(--accent)}
 
 /* Gallery / Beyond Work */
 .gallery p{color:var(--muted)}
-#beyond-work{padding-top:40px;padding-bottom:48px;border-top:1px solid var(--border)}
-#beyond-work h3{font-size:1.35rem}
-#beyond-work .grid{max-width:620px}
+#beyond-work{padding-top:56px;padding-bottom:64px;border-top:1px solid var(--border)}
+#beyond-work .grid{max-width:780px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:20px}
 .photo{
   background:var(--card);border:1px solid var(--border);padding:0;
