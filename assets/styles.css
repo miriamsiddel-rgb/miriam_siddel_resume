@@ -87,6 +87,16 @@ a{color:var(--accent)}
 .section-lede{color:var(--muted);max-width:60ch}
 
 .about p{font-size:1.05rem;color:#2b2f2c;max-width:70ch}
+.about-inner{display:flex;gap:32px;align-items:flex-start;margin-top:8px}
+.about-photo{
+  width:180px;height:225px;object-fit:cover;flex-shrink:0;
+  border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);
+}
+.about-inner p{flex:1;min-width:280px;max-width:70ch}
+@media (max-width:640px){
+  .about-inner{flex-direction:column;align-items:center;text-align:center}
+  .about-photo{width:160px;height:200px}
+}
 
 /* Education */
 .education{padding:64px 0}
