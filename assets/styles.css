@@ -136,17 +136,29 @@ a{color:var(--accent)}
 }
 
 /* Skills */
-.skills-group{margin-top:8px}
-.skills-group + .skills-group{margin-top:40px}
-.skills-group h4{font-size:1.05rem;color:var(--accent-dark);margin:0}
-.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;list-style:none;padding:0;margin:20px 0 0}
-.skill-grid li{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:20px 22px;box-shadow:var(--shadow);
-  transition:transform .18s ease,box-shadow .18s ease;
+.skills-columns{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:22px;margin-top:24px;align-items:start;
 }
-.skill-grid li:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.skill-grid strong{display:flex;align-items:center;flex-wrap:wrap;gap:8px;color:var(--accent-dark);font-size:1.02rem;margin-bottom:4px}
+@media (max-width:700px){
+  .skills-columns{grid-template-columns:1fr}
+}
+.skills-group{
+  margin:0;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--shadow);
+}
+.skills-group h4{font-size:1.02rem;color:var(--accent-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.skill-grid{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.skill-grid li{padding:0}
+.skill-grid li + li{padding-top:14px;border-top:1px dashed var(--border)}
+.skill-grid strong{display:flex;align-items:center;flex-wrap:wrap;gap:8px;color:var(--ink);font-size:.95rem;font-weight:600}
+.skill-desc{display:block;margin-top:4px;color:var(--muted);font-size:.88rem}
+.sub-skills{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:3px}
+.sub-skills li{
+  font-size:.85rem;color:var(--muted);padding-left:14px;position:relative;
+  border:0 !important;padding-top:0 !important;
+}
+.sub-skills li::before{content:"•";position:absolute;left:0;color:var(--accent)}
 .unit-tag{
   font-size:.68rem;font-weight:700;letter-spacing:.03em;color:var(--accent-dark);
   background:rgba(31,122,90,0.1);padding:2px 8px;border-radius:999px;
