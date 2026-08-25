@@ -122,19 +122,14 @@
       <h3>Projects</h3>
       <div class="project-card">
         <div class="project-header">
-          <h4>Cloud Migration Evaluation & Recommendation</h4>
-          <span class="project-status">Requirements & recommendation complete · build & deployment in progress</span>
+          <h4>Cloud Infrastructure Build and Evaluation (Azure and AWS)</h4>
         </div>
-        <p class="project-context">Holmesglen Institute — ICTCLD301, Certificate III in Information Technology (simulated client case study)</p>
-        <p>Acting as a cloud consultant for a simulated client engagement, ran a full evaluation cycle for a ticketing platform whose site was crashing during high-demand ticket on-sales — one on-sale stayed down for 90 minutes and pushed roughly 70% of that show's tickets to secondary resellers. Elicited requirements through a structured client meeting, evaluated cloud service models (IaaS/PaaS/SaaS) and three concrete platforms (Microsoft Azure, AWS, Render) against reliability, compliance and cost, then delivered a technical recommendation alongside a plain-language cost estimate for a non-technical CEO audience.</p>
+        <p class="project-context">Simulated client capstone (Holmesglen)</p>
         <ul class="project-points">
-          <li>Ran a structured client requirements meeting and produced a full requirements specification</li>
-          <li>Evaluated cloud service and deployment models against reliability, compliance and budget constraints</li>
-          <li>Compared Microsoft Azure, AWS, and Render on capability, cost model, and data residency</li>
-          <li>Mapped the solution against the Privacy Act 1988, PCI DSS, and the ACSC Essential Eight</li>
-          <li>Modelled 12-month total cost of ownership and translated it into a plain-language estimate for a CEO audience</li>
+          <li>Designed a resilient web-application architecture for a client facing outages during high-demand ticket on-sales, then built and deployed it on Microsoft Azure: an App Service web app with CPU-based autoscaling, a zone-redundant MySQL Flexible Server database, enforced HTTPS and TLS 1.2, Entra ID identities with role-based access, and a staging deployment slot.</li>
+          <li>Reproduced the same architecture on AWS using Elastic Beanstalk with auto scaling and Amazon RDS for MySQL Multi-AZ, showing the design translates across providers, and documented where the AWS lab environment could not meet the design (region residency, IAM, certificate) as explicit constraints.</li>
+          <li>Evaluated IaaS, PaaS and SaaS models against reliability, compliance and cost, mapped the solution to the Privacy Act 1988, PCI DSS and the ACSC Essential Eight, and modelled 12-month total cost of ownership with a plain-language recommendation for a non-technical audience.</li>
         </ul>
-        <p class="project-outcome"><strong>Recommendation:</strong> Microsoft Azure App Service (auto-scaling) with a zone-redundant Azure Database for MySQL — a managed PaaS platform projected to absorb on-sale traffic spikes automatically for roughly $520–620/month with a reserved foundation, directly addressing the reliability failure at the centre of the brief.</p>
         <div class="exp-tags">
           <span class="unit-tag">Microsoft Azure</span>
           <span class="unit-tag">Cloud Architecture</span>
