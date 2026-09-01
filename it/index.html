@@ -3,8 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Miriam Siddel — Information Management and Cloud & AI Automation. Bridging information architecture with cloud and automation systems." />
-  <title>Miriam Siddel — Information Management & Cloud/AI</title>
+  <meta name="description" content="Miriam Siddel — early-career IT professional focused on cloud infrastructure, AI automation, and information systems." />
+  <title>Miriam Siddel — IT, Cloud & AI Automation</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231f7a5a'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23fff' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miriam Siddel — IT, Cloud & AI Automation">
+  <meta property="og:description" content="Early-career IT professional focused on cloud infrastructure, AI automation, and information systems.">
+  <meta property="og:url" content="https://miriamsiddel-rgb.github.io/miriam_siddel_resume/it/">
+  <meta property="og:image" content="https://miriamsiddel-rgb.github.io/miriam_siddel_resume/assets/images/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
@@ -22,6 +28,12 @@
         <a href="#beyond-work">Beyond Work</a>
         <a href="#contact">Contact</a>
       </nav>
+      <nav class="version-switch" aria-label="Resume version">
+        <span>Viewing:</span>
+        <a href="../index.html">General</a>
+        <a href="../im/index.html">Information Management</a>
+        <a href="index.html" class="active">IT &amp; Cloud</a>
+      </nav>
     </div>
   </header>
 
@@ -34,6 +46,7 @@
         <p class="cta-row">
           <a class="btn" href="#skills">View Skills</a>
           <a class="btn ghost" href="#contact">Contact Me</a>
+          <button type="button" class="btn ghost" id="printBtn">Download PDF</button>
         </p>
       </div>
     </section>
@@ -56,7 +69,7 @@
           </div>
           <h4>Bachelor of Information Studies <span class="edu-spec">— Information Management</span></h4>
           <p>Coursework spanning information architecture, information governance, records and archives management, and information behaviour — building toward an ALIA / RIM Professional Australasia–recognised qualification.</p>
-          <p class="edu-gpa">GPA: 6.5 / 7.0 <span class="edu-gpa-label">High Distinction Average</span></p>
+          <p class="edu-gpa">GPA: 6.0 / 7.0 <span class="edu-gpa-label">Distinction average</span></p>
         </article>
         <article class="edu-card">
           <div class="edu-meta">
@@ -65,6 +78,14 @@
           </div>
           <h4>Certificate III in Information Technology <span class="edu-spec">— AI Automation & Cloud</span></h4>
           <p>Completed two capstone projects: a cloud infrastructure design and deployment on Microsoft Azure, and a business process automation build. Inclusive of creation of process and system documentation and client handover documents.</p>
+        </article>
+        <article class="edu-card">
+          <div class="edu-meta">
+            <span class="edu-org">TAFE Queensland</span>
+            <span class="edu-dates">2016</span>
+          </div>
+          <h4>Diploma of Anaesthetic Technology</h4>
+          <p>Practical, clinically based training in anaesthetic equipment operation and patient monitoring, including clinical placement in Queensland public hospitals — the foundation for six years' work as an Anaesthetic Technologist.</p>
         </article>
       </div>
     </section>
@@ -88,11 +109,11 @@
         </article>
         <article class="edu-card">
           <div class="edu-meta">
-            <span class="edu-org">Swim Coaching & Instruction</span>
+            <span class="edu-org">Yarra Plenty Waves</span>
             <span class="edu-dates">January 2022 to January 2025</span>
           </div>
           <h4>Head Coach & Program Lead</h4>
-          <p>Was responsible for the coaching of squads from High Performance level to Junior level. Built the Master Swimming Program from the ground up, the Masters Club place 5th in the state in it's first year. Supervising and Training junior coaching staff. The role took organisation, initiative and clear communication under pressure.</p>
+          <p>Was responsible for the coaching of squads from High Performance level to Junior level. Built the Master Swimming Program from the ground up; the Masters Club placed 5th in the state in its first year. Supervised and trained junior coaching staff. The role took organisation, initiative and clear communication under pressure.</p>
           <div class="exp-tags">
             <span class="unit-tag">Organisation</span>
             <span class="unit-tag">Initiative</span>
@@ -172,19 +193,11 @@
         <div class="skills-group">
           <h4>AI and Automation</h4>
           <ul class="skill-grid">
-            <li>
-              <strong>Make</strong>
-              <ul class="sub-skills">
-                <li>Multi-step scenarios</li>
-                <li>Webhooks</li>
-                <li>Routers and conditionals</li>
-                <li>External app integration</li>
-              </ul>
-            </li>
-            <li><strong>Google Gemini</strong><span class="skill-desc">Classification.</span></li>
-            <li><strong>Prompt Design</strong><span class="skill-desc">Constrained outputs.</span></li>
-            <li><strong>AI, ML and DL Opportunity Identification</strong></li>
-            <li><strong>Human-in-the-Loop Design</strong></li>
+            <li><strong>Make</strong><span class="skill-desc">Multi-step scenarios with webhooks, conditional routing, and third-party app integrations (Telegram, Gmail).</span></li>
+            <li><strong>Google Gemini</strong><span class="skill-desc">Classifying enquiries by priority and type inside an automated workflow.</span></li>
+            <li><strong>Prompt Design</strong><span class="skill-desc">Narrow, constrained prompts with fixed output formats and safe defaults for uncertain cases.</span></li>
+            <li><strong>AI, ML and DL Opportunity Identification</strong><span class="skill-desc">Identifying where AI, machine learning, and deep learning can automate tasks and improve productivity.</span></li>
+            <li><strong>Human-in-the-Loop Design</strong><span class="skill-desc">Automating triage and routing while keeping final judgement and resolution with a person.</span></li>
           </ul>
         </div>
 
@@ -202,66 +215,48 @@
         <div class="skills-group">
           <h4>Cloud</h4>
           <ul class="skill-grid">
-            <li>
-              <strong>Microsoft Azure</strong>
-              <ul class="sub-skills">
-                <li>App Service</li>
-                <li>Managed databases</li>
-              </ul>
-            </li>
-            <li><strong>Service and Deployment Model Evaluation</strong></li>
-            <li><strong>Cost of Ownership Modelling</strong><span class="skill-desc">Studied through coursework and capstone projects.</span></li>
+            <li><strong>Microsoft Azure</strong><span class="skill-desc">App Service web apps with autoscaling, and zone-redundant managed MySQL databases.</span></li>
+            <li><strong>Amazon AWS</strong><span class="skill-desc">Elastic Beanstalk with autoscaling and Amazon RDS for MySQL Multi-AZ, reproducing an Azure architecture design.</span></li>
+            <li><strong>Service and Deployment Model Evaluation</strong><span class="skill-desc">Evaluating IaaS, PaaS and SaaS models against reliability, compliance and cost.</span></li>
+            <li><strong>Cost of Ownership Modelling</strong><span class="skill-desc">Modelling 12-month total cost of ownership to support a plain-language recommendation.</span></li>
           </ul>
         </div>
 
         <div class="skills-group">
           <h4>AI-Assisted Development</h4>
           <ul class="skill-grid">
-            <li>
-              <strong>Claude Code</strong>
-              <ul class="sub-skills">
-                <li>In VS Code</li>
-                <li>Incremental build and deployment</li>
-              </ul>
-            </li>
-            <li><strong>GitHub Pages</strong><span class="skill-desc">Live deployment.</span></li>
+            <li><strong>Claude Code</strong><span class="skill-desc">Building and deploying this site incrementally in VS Code, one scoped change at a time.</span></li>
+            <li><strong>GitHub Pages</strong><span class="skill-desc">Publishing and maintaining live static site deployments.</span></li>
           </ul>
         </div>
 
         <div class="skills-group">
           <h4>Scripting and Version Control</h4>
           <ul class="skill-grid">
-            <li><strong>Git and GitHub</strong></li>
-            <li><strong>Python and PowerShell</strong><span class="skill-desc">Foundational, actively developing.</span></li>
+            <li><strong>Git and GitHub</strong><span class="skill-desc">Branching, commits, and pull request workflows for site and project changes.</span></li>
+            <li><strong>Python and PowerShell</strong><span class="skill-desc">Foundational scripting skills, actively developing through coursework and practice.</span></li>
           </ul>
         </div>
 
         <div class="skills-group">
           <h4>Microsoft 365</h4>
           <ul class="skill-grid">
-            <li><strong>SharePoint, Teams, Outlook and OneDrive</strong><span class="skill-desc">User level.</span></li>
+            <li><strong>SharePoint, Teams, Outlook and OneDrive</strong><span class="skill-desc">Day-to-day user-level proficiency across the Microsoft 365 suite.</span></li>
           </ul>
         </div>
 
         <div class="skills-group">
           <h4>Security and Compliance</h4>
           <ul class="skill-grid">
-            <li><strong>Privacy Act 1988, PCI DSS and the ACSC Essential Eight</strong><span class="skill-desc">Applied in a cloud evaluation.</span></li>
+            <li><strong>Privacy Act 1988, PCI DSS and the ACSC Essential Eight</strong><span class="skill-desc">Mapped a cloud architecture design against these frameworks as part of a compliance evaluation.</span></li>
           </ul>
         </div>
 
         <div class="skills-group">
           <h4>Documentation and Records</h4>
           <ul class="skill-grid">
-            <li>
-              <strong>Accessit Library Management System</strong>
-              <ul class="sub-skills">
-                <li>Cataloguing</li>
-                <li>Metadata</li>
-                <li>Record management</li>
-              </ul>
-            </li>
-            <li><strong>Knowledge Base Content</strong></li>
+            <li><strong>Accessit Library Management System</strong><span class="skill-desc">Cataloguing, metadata, and record management for a multi-campus library system.</span></li>
+            <li><strong>Knowledge Base Content</strong><span class="skill-desc">Creating web content and digital displays to promote reading and library programs.</span></li>
           </ul>
         </div>
       </div>
@@ -271,7 +266,7 @@
       <h3>Beyond Work</h3>
       <p>Current representative on the Australian National Para-Climbing Team in the RP3 classification, current RP3 National champion and several national cup medal placings. I also compete as a Masters swimmer, including at the Australian Masters Games, where I've placed on the podium in multiple events. Click a photo to enlarge.</p>
       <div class="grid">
-        <button class="photo" data-src="../assets/images/1.jpg" aria-label="Climber reaching for a yellow hold on a competition wall">
+        <button class="photo" data-src="../assets/images/1.jpg" data-pos="50% 20%" aria-label="Climber reaching for a yellow hold on a competition wall">
           <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
             <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef3ee"/><stop offset="1" stop-color="#d8e6de"/></linearGradient></defs>
             <rect width="200" height="120" fill="url(#g1)"/>
@@ -284,7 +279,7 @@
             <ellipse cx="30" cy="90" rx="10" ry="7" fill="#7a5a3c"/>
           </svg>
         </button>
-        <button class="photo" data-src="../assets/images/2.jpg" aria-label="Group photo of medalists at a climbing competition">
+        <button class="photo" data-src="../assets/images/2.jpg" data-pos="100% 50%" aria-label="Group photo of medalists at a climbing competition">
           <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
             <defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22201b"/><stop offset="1" stop-color="#12241c"/></linearGradient></defs>
             <rect width="200" height="120" fill="url(#g2)"/>
@@ -301,8 +296,8 @@
             </g>
           </svg>
         </button>
-        <button class="photo" data-src="../assets/images/masters-games-medals.jpg" aria-label="Miriam with medals at the Australian Masters Games"></button>
-        <button class="photo" data-src="../assets/images/climbing-candid.jpg" aria-label="Black and white candid photo at a climbing event"></button>
+        <button class="photo" data-src="../assets/images/masters-games-medals.jpg" data-pos="100% 50%" aria-label="Miriam with medals at the Australian Masters Games"></button>
+        <button class="photo" data-src="../assets/images/climbing-candid.jpg" data-pos="50% 15%" aria-label="Black and white candid photo at a climbing event"></button>
       </div>
     </section>
 
@@ -317,10 +312,10 @@
     <section id="contact" class="container contact">
       <h3>Contact</h3>
       <ul class="contact-list">
-        <li><strong>Location:</strong> Melbourne VIC</li>
-        <li><strong>Email:</strong> <a href="mailto:miriam.siddel@gmail.com">miriam.siddel@gmail.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miriam-siddel-939139266/" target="_blank" rel="noopener">linkedin.com/in/miriam-siddel</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/miriamsiddel-rgb" target="_blank" rel="noopener">github.com/miriamsiddel-rgb</a></li>
+        <li><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><strong>Location:</strong> Melbourne VIC</li>
+        <li><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><strong>Email:</strong> <a href="mailto:miriam.siddel@gmail.com">miriam.siddel@gmail.com</a></li>
+        <li><svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miriam-siddel-939139266/" target="_blank" rel="noopener">linkedin.com/in/miriam-siddel</a></li>
+        <li><svg class="contact-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><strong>GitHub:</strong> <a href="https://github.com/miriamsiddel-rgb" target="_blank" rel="noopener">github.com/miriamsiddel-rgb</a></li>
       </ul>
     </section>
   </main>
