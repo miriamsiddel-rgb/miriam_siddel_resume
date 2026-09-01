@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   photos.forEach(btn=>{
     const src=btn.dataset.src||'';
+    const pos=btn.dataset.pos||'';
     if(src){
       const probe=new Image();
       probe.onload=()=>{
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         img.src=src;
         img.alt=btn.getAttribute('aria-label')||'';
         img.className='photo-thumb';
+        if(pos) img.style.objectPosition=pos;
         btn.innerHTML='';
         btn.appendChild(img);
       };
@@ -49,4 +51,25 @@ document.addEventListener('DOMContentLoaded',()=>{
   modalClose.addEventListener('click',closeModal);
   modal.addEventListener('click',(e)=>{ if(e.target===modal) closeModal(); });
   document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeModal(); });
+
+  const printBtn=document.getElementById('printBtn');
+  if(printBtn){
+    printBtn.addEventListener('click',()=>window.print());
+  }
+
+  const navAnchors=document.querySelectorAll('.nav a[href^="#"]');
+  if(navAnchors.length){
+    const targets=[...navAnchors]
+      .map(a=>document.getElementById(a.getAttribute('href').slice(1)))
+      .filter(Boolean);
+    const setActive=(id)=>{
+      navAnchors.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+id));
+    };
+    const sectionObserver=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+    targets.forEach(t=>sectionObserver.observe(t));
+  }
 });
