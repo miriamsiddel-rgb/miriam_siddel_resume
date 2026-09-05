@@ -163,24 +163,26 @@
       <div class="project-card">
         <div class="project-header">
           <h4>Business Process Automation — HydroMATE</h4>
-          <span class="project-status">Process analysis & business case complete · automation build in progress</span>
+          <span class="project-status">Complete — three-workflow build with a live intake site</span>
         </div>
         <p class="project-context">Holmesglen Institute — ICTAII401 / BSBTEC404 / ICTICT312, Certificate III in Information Technology (AI Automation & Cloud) (simulated client case study)</p>
-        <p>Acting as an automation consultant for a simulated client (HydroMATE, a scaling smart-bottle company), analysed a customer support process breaking down under four disconnected manual intake channels — phone, email, Telegram, and colleague referrals — which was producing duplicated and dropped enquiries and a rising "non-responsive support" complaint. Selected Customer Support for automation over a higher-volume alternative based on risk-weighted business impact rather than raw scaling relief, mapped the current-state process, and designed an automated intake-and-normalisation workflow feeding a single tracked, de-duplicated log.</p>
+        <p>Acting as an automation consultant for a simulated client (HydroMATE, a scaling smart-bottle company), analysed a customer support process breaking down under four disconnected manual intake channels — phone, email, Telegram, and colleague referrals — which was producing duplicated and dropped enquiries and a rising "non-responsive support" complaint. Selected Customer Support for automation over a higher-volume alternative based on risk-weighted business impact rather than raw scaling relief, then designed and built a three-stage Make automation: webhook capture and normalisation into a tracked log, AI-based priority and type classification, and conditional routing to a definite outcome for every enquiry. Built and deployed a live customer enquiry website with Claude Code, hosted on AWS S3, as the automation's real intake point.</p>
         <img src="assets/images/hydromate-diagram.png" alt="HydroMATE customer enquiry process diagram, showing four manual intake channels converging into an automation opportunity for collating and normalising enquiries into one tracked log" class="project-diagram">
         <ul class="project-points">
           <li>Identified and prioritised automation opportunities across business functions using risk-weighted, not just volume-based, analysis</li>
           <li>Mapped the current-state manual process end-to-end and diagrammed it</li>
-          <li>Designed an automated multi-channel intake and normalisation workflow using Make, triggered via webhook</li>
-          <li>Identified failure risks in the automated workflow (silent data loss, mis-mapped fields) and designed mitigations (field validation, error notifications)</li>
+          <li>Built and tested three progressively advanced Make workflows: webhook capture and normalisation, AI-based priority/type classification, and three-way conditional routing to escalate, acknowledge or flag each enquiry</li>
+          <li>Added a retry-based error handler on the AI classification step so a temporary AI outage is retried automatically instead of silently failing</li>
           <li>Built and delivered a structured business case pitch — problem, solution, benefits, risk, and a clear ask for stakeholder sign-off</li>
         </ul>
-        <p class="project-outcome"><strong>Recommendation:</strong> Automate the multi-channel enquiry intake and normalisation step — the single point where four disconnected channels currently create duplicated and dropped enquiries — using a Make webhook-triggered workflow feeding one consistently structured, tracked log, while keeping final resolution of sensitive complaints with a human.</p>
+        <p class="project-outcome"><strong>Recommendation:</strong> Automate the enquiry pipeline end-to-end — capture and normalise every channel into one tracked log, classify it by priority, then route it to a definite outcome — so nothing is duplicated or dropped, urgent cases reach a specialist immediately, and routine cases are acknowledged instantly, while final resolution of sensitive complaints stays with a person.</p>
         <div class="exp-tags">
           <span class="unit-tag">Make (Automation)</span>
-          <span class="unit-tag">Process Mapping</span>
+          <span class="unit-tag">AI Classification (Gemini)</span>
+          <span class="unit-tag">Conditional Routing</span>
+          <span class="unit-tag">Telegram Escalation</span>
           <span class="unit-tag">Webhooks</span>
-          <span class="unit-tag">Business Case Development</span>
+          <span class="unit-tag">AWS S3 Deployment</span>
           <span class="unit-tag">Risk Mitigation</span>
         </div>
       </div>
