@@ -159,7 +159,7 @@
           <h4>HydroMATE: AI-Integrated Automation</h4>
         </div>
         <p class="project-context">Holmesglen capstone project</p>
-        <p>Rebuilt a broken customer support intake process as three progressively advanced Make workflows. The first captures an enquiry through a webhook, normalises it, and logs it with a ticket ID. The second adds a Google Gemini step that classifies each enquiry by priority and type, using a narrow prompt with a fixed output format and a default to High when unsure, so the failure is safe rather than silent. The third adds conditional routing that escalates urgent enquiries to a specialist Telegram channel in real time, with a Gmail fallback. When the Telegram integration failed in testing, I used the vendor documentation to trace and fix it. The principle throughout was that automation routes and people resolve.</p>
+        <p>Rebuilt a broken customer support intake process as three progressively advanced Make workflows, fed by a live customer enquiry website I built with Claude Code and deployed to AWS S3. The first captures an enquiry through the site's webhook, normalises it, and logs it with a ticket ID. The second adds a Google Gemini step that classifies each enquiry by priority and type, using a narrow prompt with a fixed output format and a default to High when unsure, so the failure is safe rather than silent. The third routes on that classification three ways, logging every enquiry to Google Sheets regardless of route: High-priority enquiries are logged and escalated to a specialist Telegram channel in real time, Low-priority enquiries are logged and get an automatic Gmail acknowledgement, and anything flagged as spam is logged to a separate tab for review rather than discarded, with a retry handler on the AI step absorbing temporary outages. When Make's own argument-separator syntax silently broke my first attempt at parsing Gemini's output, I used Make's function documentation to trace the cause and switch to a pipe-delimited format. The principle throughout was that automation routes and people resolve.</p>
         <img src="../assets/images/hydromate-diagram.png" alt="HydroMATE customer enquiry process diagram, showing four manual intake channels converging into an automation opportunity for collating and normalising enquiries into one tracked log" class="project-diagram">
         <div class="exp-tags">
           <span class="unit-tag">Make</span>
@@ -167,6 +167,7 @@
           <span class="unit-tag">Google Gemini</span>
           <span class="unit-tag">Conditional Routing</span>
           <span class="unit-tag">Telegram Integration</span>
+          <span class="unit-tag">AWS S3 Deployment</span>
         </div>
       </div>
 
@@ -216,7 +217,7 @@
           <h4>Cloud</h4>
           <ul class="skill-grid">
             <li><strong>Microsoft Azure</strong><span class="skill-desc">App Service web apps with autoscaling, and zone-redundant managed MySQL databases.</span></li>
-            <li><strong>Amazon AWS</strong><span class="skill-desc">Elastic Beanstalk with autoscaling and Amazon RDS for MySQL Multi-AZ, reproducing an Azure architecture design.</span></li>
+            <li><strong>Amazon AWS</strong><span class="skill-desc">Elastic Beanstalk with autoscaling and Amazon RDS for MySQL Multi-AZ, reproducing an Azure architecture design; S3 static website hosting for a live automation demo site.</span></li>
             <li><strong>Service and Deployment Model Evaluation</strong><span class="skill-desc">Evaluating IaaS, PaaS and SaaS models against reliability, compliance and cost.</span></li>
             <li><strong>Cost of Ownership Modelling</strong><span class="skill-desc">Modelling 12-month total cost of ownership to support a plain-language recommendation.</span></li>
           </ul>
